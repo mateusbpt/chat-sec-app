@@ -1,0 +1,1 @@
+var chatsec = angular.module('chatsec', ['ngRoute', 'ui.bootstrap', 'ngAnimate', 'toastr', 'ngStorage', 'luegg.directives']);
