@@ -11,7 +11,7 @@
 	</div>
 	<div class="digitar">
 		<button tyoe="button" class="btn form-control m-10 sair" ng-click="encerrarSessao()">Sair</button>
-		<input type="text" class="form-control m-10" placeholder="Escreva sua mensagem..." ng-model="novaMensagem">
-		<button ng-disabled="novaMensagem === null" type="button" class="btn m-10" ng-click="enviarMensagem(novaMensagem)"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+		<input type="text" class="form-control m-10" placeholder="Escreva sua mensagem..." ng-model="novaMensagem.Texto">
+		<button type="button" class="btn m-10" ng-click="enviarMensagem(novaMensagem)"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
 	</div>
 </div>

@@ -15,12 +15,12 @@ namespace chat.teste
             new Usuario()
             {
                 Id = 1,
-                Nickname = "mateusbpt"
+                Nome = "mateusbpt"
             },
             new Usuario()
             {
                 Id = 2,
-                Nickname = "teste"
+                Nome = "teste"
             }
         };
 
@@ -30,9 +30,20 @@ namespace chat.teste
             var usuario = new Usuario()
             {
                 Id = 3,
-                Nickname = "leandro"
+                Nome = "leandro"
             };
             Assert.False(usuario.ValidarNicknameRepetido(usuarios));
+        }
+
+        [Fact]
+        public void ValidarUsuarioExistente()
+        {
+            var usuario = new Usuario()
+            {
+                Id = 3,
+                Nome = "teste"
+            };
+            Assert.True(usuario.ValidarNicknameRepetido(usuarios));
         }
     }
 }

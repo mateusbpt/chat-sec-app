@@ -9,12 +9,13 @@ namespace chat.dominio
     public class Usuario
     {
         public int Id { get; set; }
-        public string Nickname { get; set; }
+        public string Nome { get; set; }
+        public string UrlImagemPerfil { get; set; }
 
 
         public bool ValidarNicknameRepetido(List<Usuario> usuarios)
         {
-            return usuarios.Any(u => u.Nickname.ToLower().Equals(Nickname.ToLower()));
+            return usuarios.Any(u => u.Nome.ToLower().Equals(Nome.ToLower()));
         }
     }
 }

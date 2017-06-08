@@ -19,5 +19,10 @@ namespace chat.dominio
             this.DateTimeEnvio = DateTime.Now;
             this.Usuario = usuario;
         }
+
+        public String mensagemProibida(string mensagem)
+        {
+            return mensagem.Replace("Leandro", "******");
+        }
     }
 }

@@ -62,8 +62,6 @@ body {
 	flex-direction: row;
 	margin: 10px;
 	padding-bottom: 5px;
-	margin-top: 500px;
-	display: fixed;
 }
 .sair {
 	color: #fff;
@@ -75,4 +73,8 @@ body {
 }
 .data {
 	color: #a9a9a9;
+}
+
+.image-margin{
+	margin-bottom: 20px;
 }

@@ -1,6 +1,6 @@
 chatsec.factory('UsuarioService', function($http) {
 
-    var urlUsuario = 'http://localhost:57870/api/Usuarios';
+    var urlUsuario = 'http://localhost:56733/api/Usuarios';
 
     function carregarUsuarios() {
 		return $http.get(urlUsuario);

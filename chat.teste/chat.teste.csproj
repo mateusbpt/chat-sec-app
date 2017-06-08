@@ -43,6 +43,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MensagemTeste.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuarioTeste.cs" />
   </ItemGroup>

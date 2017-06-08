@@ -5,11 +5,11 @@ chatsec.controller('ChatController', function($scope, $location, MensagemService
 	verificaUsuarioLogado();
 	carregar();
 	
-	//function verificaUsuarioLogado() {
-	//    if ($scope.usuarioLocal === null) {
-	///        $location.url('/login');
-	//    }
-	//};		
+	function verificaUsuarioLogado() {
+	    if ($scope.usuarioLocal === null) {
+	        $location.url('/login');
+	    }
+	};		
 
 	function carregar(){
 		MensagemService.carregar().then(function(response){			
@@ -25,10 +25,12 @@ chatsec.controller('ChatController', function($scope, $location, MensagemService
 	}
 
 	$scope.enviarMensagem = function(mensagem){
+		if(mensagem.Texto !== " "){	
 			mensagem.Usuario = $localStorage.usuario;
 			MensagemService.adicionar(mensagem).then(function (response) {
 				carregar();
-				$scope.novaMensagem = null;
-			});
+				mensagem.Texto = " ";
+			})
 		}
+	};
 });
