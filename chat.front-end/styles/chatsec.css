@@ -62,11 +62,13 @@ body {
 	flex-direction: row;
 	margin: 10px;
 	padding-bottom: 5px;
+	margin-top: 500px;
+	display: fixed;
 }
 .sair {
 	color: #fff;
 	width: 80px;
-	background-color: black;
+	background-color: #a9a9a9;
 }
 .fa-paper-plane {
 	color: black;

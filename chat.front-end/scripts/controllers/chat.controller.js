@@ -5,11 +5,11 @@ chatsec.controller('ChatController', function($scope, $location, MensagemService
 	verificaUsuarioLogado();
 	carregar();
 	
-	function verificaUsuarioLogado() {
-	    if ($scope.usuarioLocal === null) {
-	        $location.url('/login');
-	    }
-	};		
+	//function verificaUsuarioLogado() {
+	//    if ($scope.usuarioLocal === null) {
+	///        $location.url('/login');
+	//    }
+	//};		
 
 	function carregar(){
 		MensagemService.carregar().then(function(response){			
