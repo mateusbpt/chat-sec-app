@@ -6,6 +6,5 @@ install:
 script:
   - xbuild /p:Configuration=Debug ./chat.teste/chat.teste.csproj
   - xbuild /p:Configuration=Debug ./chat.dominio/chat.dominio.csproj
-  - xbuild /p:Configuration=Debug ./chat.web/chat.web.csproj
   - mono ./testrunner/xunit.runners.1.9.2/tools/xunit.console.clr4.exe ./chat.teste/bin/Debug/chat.teste.dll
   
